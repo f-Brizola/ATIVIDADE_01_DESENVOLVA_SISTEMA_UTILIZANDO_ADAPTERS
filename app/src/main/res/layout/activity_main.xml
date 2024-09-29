@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="737dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:text="Nome Aluno"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edNome"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:background="#1D808080"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:text="Área de Escolha"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edEscolha"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:background="#1D808080"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnInserir"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:backgroundTint="#159763"
+                android:text="Inserir"
+                android:textSize="16sp"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listaTarefas"
+                android:layout_width="match_parent"
+                android:layout_height="391dp"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:background="#3F51B5"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnZerar"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130sp"
+                android:layout_marginTop="25sp"
+                android:backgroundTint="#E92A1E"
+                android:text="ZERAR"
+                android:textSize="20sp"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
